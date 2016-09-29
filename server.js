@@ -73,6 +73,6 @@ app.put('/items/:id', jsonParser, function(request, response){
 });
 
 
-app.listen("3030", function(){
+app.listen((process.env.PORT || 3030), function(){
 	console.log("App is running at http://localhost:3030")
 });
